@@ -338,7 +338,7 @@ cdef int calculate_score(sign_args, args, is_varargs=False) except *:
             else:
                 return -1
 
-        if r == 'J': # long
+        if r == 'J': # int
             if isinstance(arg, int):
                 score += 10
                 continue
@@ -477,7 +477,7 @@ cdef readable_sig(sig, is_var):
            'D': 'double',
            'F': 'float',
            'I': 'int',
-           'J': 'long',
+           'J': 'int',
            'S': 'short',
            'V': 'void',
            '[': 'array',
