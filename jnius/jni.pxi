@@ -5,7 +5,7 @@ cdef extern from "jni.h":
     ctypedef unsigned short  jchar
     ctypedef short           jshort
     ctypedef int             jint
-    ctypedef long long       jlong
+    ctypedef int       jlong
     ctypedef float           jfloat
     ctypedef double          jdouble
     ctypedef void*           jobject
